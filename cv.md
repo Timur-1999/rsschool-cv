@@ -20,3 +20,21 @@ My goal is to become an IT specialist, as I believe that this profession will he
 *Adobe Photoshop, Figma
 
 =============
+
+##Code example
+``` javascript
+
+let human = 'I want to become a programmer!';
+function rs_school(student){
+  if(student == 'I want to become a programmer!'){
+    console.log('We will help you!');
+  }
+  else{
+    console.log("Sorry it's not for us");
+  }
+}
+
+rs_school(human);
+```
+
+=============
