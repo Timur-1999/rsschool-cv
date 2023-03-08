@@ -16,8 +16,11 @@ My goal is to become an IT specialist, as I believe that this profession will he
 
 ## Skills and technologies
 * HTML5, CSS3, JavaScript(ES6)
+
 * Bootstrap, jQuery, Sass/Scss
+
 * Git, GitHub
+
 * Adobe Photoshop, Figma
 
 
