@@ -124,7 +124,32 @@ h2.specialty{
 h2.title{
     color: rgb(95, 95, 95);
 }
-
+.contacts_lists{
+    color: grey;
+}
+.lists-item{
+    position: relative;
+    margin-top: 15px;
+    font-weight: 700;
+    padding-left: 25px;
+}
+.lists-item::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 0px;
+    transform: translateY(calc(-55%));
+    border: 3px solid gold;
+    border-radius: 50%;
+}
+.lists-item:last-child{
+    margin-bottom: 25px;
+}
+.contact-link{
+    color: rgb(230, 151, 5);
+}
 
 
 /* footer */
