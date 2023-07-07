@@ -1,4 +1,4 @@
-/* total style */
+/* general style */
 *{
     margin: 0;
     padding: 0;
@@ -33,7 +33,7 @@ ul{
     gap: 30px;
 }
 .menu__item{
-    font-size: 23px;
+    font-size: 1.5em;
     color: white;
     font-weight: 700;
     transition: transform 0.3s;
@@ -48,6 +48,7 @@ ul{
 .main{
     min-height: 100vh;
     margin-top: 50px;
+    margin-bottom: 25px;
 }
 .wrapper{
     max-width: 1140px;
@@ -92,7 +93,7 @@ ul{
 h1.name{
     position: relative;
     color: rgb(95, 95, 95);
-    font-size: 45px;
+    font-size: 3.5em;
     letter-spacing: 1.5px;
     padding-bottom: 5px;
     margin-bottom: 10px;
@@ -101,7 +102,7 @@ h1.name::before{
     content: '';
     position: absolute;
     background-color: gold;
-    width: 150px;
+    width: 200px;
     height: 3px;
     bottom: 0;
     left: 50%;
@@ -133,7 +134,7 @@ h2.specialty{
 h2.title{
     color: rgb(95, 95, 95);
 }
-.contacts_lists{
+.main_lists{
     color: grey;
 }
 .lists-item{
@@ -149,17 +150,50 @@ h2.title{
     height: 10px;
     top: 50%;
     left: 0px;
-    transform: translateY(calc(-55%));
+    transform: translateY(-55%);
     border: 3px solid gold;
+    border-radius: 50%;
+}
+.lists-item::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-60%);
+    background-color: gold;
     border-radius: 50%;
 }
 .lists-item:last-child{
     margin-bottom: 25px;
 }
-.contact-link{
-    color: rgb(230, 151, 5);
+.link{
+    color: rgb(230, 150, 5);
 }
-
+div.lists-item{
+    color: grey;
+}
+.lists-item>span{
+    color: rgb(150, 190, 15);
+}
+.lists-item>span.subtitle{
+    margin-top: 5px;
+    font-size: 0.89em;
+}
+p.descr-summary{
+    margin-top: 15px;
+    margin-bottom: 24px;
+    color: grey;
+}
+.section-code{
+    margin-top: 5px;
+    margin-bottom: 23px;
+}
+.code-js{
+    color: grey;
+    font-weight: 700;
+}
 
 /* footer */
 .footer{
@@ -173,7 +207,7 @@ h2.title{
     gap: 285px;
 }
 .copyright{
-    font-size: 19px;
+    font-size: 1.2em;
     font-weight: 700;
 }
 .img_rss{
