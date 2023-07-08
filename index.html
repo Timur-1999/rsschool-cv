@@ -28,26 +28,34 @@
 
 <body>
 	<header class="header">
-		<nav class="menu">
-			<ul class="menu__items">
-				<li class="menu__item"><a href="#contacts">Contacts</a></li>
-				<li class="menu__item"><a href="#summary">Summary</a></li>
-				<li class="menu__item"><a href="#skills">Skills</a></li>
-				<li class="menu__item"><a href="#code">Code</a></li>
-				<li class="menu__item"><a href="#courses">Courses</a></li>
-				<li class="menu__item"><a href="#projects">Projects</a></li>
-				<li class="menu__item"><a href="#education">Education</a></li>
-				<li class="menu__item"><a href="#languages">Languages</a></li>
-			</ul>
-		</nav>
+		<div class="container header-container">
+			<div class="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<nav class="menu">
+				<ul class="menu__items">
+					<li class="menu__item"><a href="#contacts">Contacts</a></li>
+					<li class="menu__item"><a href="#summary">Summary</a></li>
+					<li class="menu__item"><a href="#skills">Skills</a></li>
+					<li class="menu__item"><a href="#code">Code</a></li>
+					<li class="menu__item"><a href="#courses">Courses</a></li>
+					<li class="menu__item"><a href="#projects">Projects</a></li>
+					<li class="menu__item"><a href="#education">Education</a></li>
+					<li class="menu__item"><a href="#languages">Languages</a></li>
+				</ul>
+			</nav>
+		</div>
+
 	</header>
 	<main class="main">
-		<div class="main__container">
+		<div class="container main__container">
 			<section class="section section-profile" id="profile">
 				<div class="img_photo">
 					<img src="assets/img/myFoto.jpg" alt="here should be photo author">
 				</div>
-				<section class="main__item main__item_center ">
+				<section class="main__item">
 					<h1 class="name">Asanov Timur</h1>
 					<h2 class="specialty">front-end developer</h2>
 				</section>
@@ -97,17 +105,15 @@
 			</section>
 			<section class="section" id="code">
 				<h2 class="title">Code</h2>
-				<pre class="section-code">
-                        <code class="code-js">
-function fibonacci(n){
-  if (!Number.isInteger(n) || n &lt; 0) {
-    return 'The value is not an integer or is a negative number';
-  } else {
-    return n &lt;= 1 ? n : fibonacci(n-2) + fibonacci(n-1);
-  }
-}
-                        </code>
-                    </pre>
+				<code class="code-js">
+					function fibonacci(n){ <br>
+					&nbsp;&nbsp;if (!Number.isInteger(n) || n &lt; 0) { <br>
+					&nbsp;&nbsp;&nbsp;&nbsp;return 'The value is not an integer or is a negative number'; <br>
+					&nbsp;&nbsp;} else { <br>
+					&nbsp;&nbsp;&nbsp;&nbsp;return n &lt;= 1 ? n : fibonacci(n-2) + fibonacci(n-1); <br>
+					&nbsp;&nbsp;} <br>
+					}
+				</code>
 			</section>
 			<section class="section" id="courses">
 				<h2 class="title">Courses</h2>
@@ -142,14 +148,17 @@ function fibonacci(n){
 		</div>
 	</main>
 	<footer class="footer">
-		<ul class="footer__items">
+		<ul class="container footer__items">
 			<li><a href="https://github.com/Timur-1999"><img src="assets/svg/github.svg" alt="github"></a></li>
-			<li class="copyright">&copy; 2023 Asanov Timur</li>
+			<li class="copyright"><span>&copy; 2023</span></li>
 			<li><a href="https://rs.school/js/"><img class="img_rss" src="assets/svg/rs_school_js.svg"
 						alt="rs_school"></a>
 			</li>
 		</ul>
 	</footer>
+
+	<script src="index.js"></script>
+
 </body>
 
 </html>
