@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 html {
     scroll-behavior: smooth; 
@@ -47,19 +48,27 @@ ul{
 /* main */
 .main{
     min-height: 100vh;
-    margin-top: 50px;
     margin-bottom: 25px;
 }
-.wrapper{
+.main__container{
     max-width: 1140px;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
-    align-items: start;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 .section{
-    width: 50%;
+    width: calc(50% - 20px);
+    padding: 10px;
+    padding-bottom: 30px;
+    border-bottom: 3px solid gold;
+}
+.section-profile{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 50px 30px 30px;
+    border-bottom: 15px solid gold;
 }
 .img_photo{
     position: relative;
@@ -70,7 +79,6 @@ ul{
     overflow: hidden;
     border: 10px solid gold;
     box-shadow: inset 0px 0px 1em grey;
-    margin: 0 auto;
 }
 .img_photo>img{
     position: absolute;
@@ -112,26 +120,8 @@ h2.specialty{
     text-transform: uppercase;
     color: grey;
 }
-.main__container{
-    margin-top: 30px;
-    padding-top: 20px;
-    padding-left: 10px;
-    min-height: 70px;
-}
-.container_left{
-    border-left: 10px outset white;
-}
-.container_right{
-    border-right: 10px inset white;
-}
-.container_big-line{
-    border-top: 10px outset gold;
-}
-.container_line{
-    border-top: 3px solid gold;
-    margin: 10px;
-}
 h2.title{
+    margin: 20px 0px;
     color: rgb(95, 95, 95);
 }
 .main_lists{
@@ -165,9 +155,6 @@ h2.title{
     background-color: gold;
     border-radius: 50%;
 }
-.lists-item:last-child{
-    margin-bottom: 25px;
-}
 .link{
     color: rgb(230, 150, 5);
 }
@@ -183,8 +170,10 @@ div.lists-item{
 }
 p.descr-summary{
     margin-top: 15px;
-    margin-bottom: 24px;
     color: grey;
+}
+.section-code{
+    height: 130px;
 }
 .code-js{
     color: grey;
